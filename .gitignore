@@ -1,0 +1,19 @@
+# Java / Maven
+target/
+*.class
+*.jar
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Environment / secrets
+.env
+
+# Spring configuration containing passwords/API keys
+application-local.properties
+
+# OS files
+.DS_Store
+Thumbs.db

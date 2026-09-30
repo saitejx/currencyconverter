@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0b2545;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+nav a.active, nav a:hover {
+    color: #fff;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.converter-container, .history-container, .favorites-container {
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #475569;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.currency-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.currency-group .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.icon-btn {
+    background: none;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin-top: 25px; /* align with inputs */
+    color: #475569;
+    background-color: #f1f5f9;
+}
+
+.icon-btn:hover {
+    background-color: #e2e8f0;
+}
+
+.primary-btn {
+    background-color: #0b2545;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+}
+
+.primary-btn:hover {
+    background-color: #133b6b;
+}
+
+.secondary-btn {
+    background-color: #f1f5f9;
+    color: #0b2545;
+    border: 1px solid #cbd5e1;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.secondary-btn:hover {
+    background-color: #e2e8f0;
+}
+
+.danger-btn {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.danger-btn:hover {
+    background-color: #b91c1c;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.result-container {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.large-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0b2545;
+    margin: 10px 0;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 10px;
+}
+
+.error {
+    background-color: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #f87171;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    color: #475569;
+}
+
+#favorites-list {
+    list-style: none;
+    padding: 0;
+}
+
+#favorites-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+.fav-pair {
+    cursor: pointer;
+    font-weight: 500;
+    color: #0b2545;
+    flex: 1;
+}
+
+.delete-fav-btn {
+    background: none;
+    border: none;
+    color: #ef4444;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .currency-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .icon-btn {
+        margin-top: 0;
+        width: 100%;
+    }
+}
